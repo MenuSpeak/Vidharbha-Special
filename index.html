@@ -1197,11 +1197,19 @@
 
 
    <div class="tabs-scroll">
-<button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="बिरयानी">🍚 Biryani Special</button>
-<button class="tab" data-cat="स्टार्टर">🍗 Starters</button>
+<button class="tab active" data-cat="all">🍽️ सर्व आयटम</button>
+<button class="tab" data-cat="CHICKEN">🍗 चिकन</button>
+<button class="tab" data-cat="MUTTON">🥩 मटण</button>
+<button class="tab" data-cat="VEG MENU">🥗 व्हेज मेनू</button>
+<button class="tab" data-cat="PANEER DISHES">🧀 पनीरचे पदार्थ</button>
+<button class="tab" data-cat="SNACKS & SIDES">🍟 स्नॅक्स आणि पापड</button>
+<button class="tab" data-cat="BREADS">🫓 पोळी आणि भाकरी</button>
+<button class="tab" data-cat="RICE">🍚 राईस प्रकार</button>
+<button class="tab" data-cat="MAKING CHARGES">👨‍🍳 बनवण्याची मजुरी</button>
+<button class="tab" data-cat="FISH FRY ITEMS">🐟 फिश फ्राय</button>
+<button class="tab" data-cat="FISH SABJI ITEMS">🍲 फिश भाजी आणि करी</button>
               </div>  
-                </div>
+                </div> 
             </div>
 
             <section class="menu-grid" id="menuGrid">
@@ -1345,9 +1353,83 @@
         // Menu Data - FIXED VERSION
         const data = [
 
+  {"id": 1, "cat": "CHICKEN", "name": "Chicken Curry | चिकन करी", "price": "100/-", "desc": "Traditional home-style chicken gravy", "tags": ["Non-Veg", "Chicken", "Curry"], "img": "img/chicken_curry.jpeg"},
+  {"id": 2, "cat": "CHICKEN", "name": "Chicken Masala | चिकन मसाला", "price": "120/-", "desc": "Spiced chicken pieces in a thick gravy", "tags": ["Non-Veg", "Chicken", "Spicy"], "img": "img/chicken_masala.jpeg"},
+  {"id": 3, "cat": "CHICKEN", "name": "Chicken Sukha | चिकन सुखा", "price": "130/-", "desc": "Dry and spicy roasted chicken preparation", "tags": ["Non-Veg", "Chicken", "Dry"], "img": "img/chicken_sukha.jpeg"},
+  {"id": 4, "cat": "CHICKEN", "name": "Chicken Handi (Half) | चिकन हंडी (हाफ)", "price": "350/-", "desc": "Rich chicken curry slow-cooked in a handi - Half Portion", "tags": ["Non-Veg", "Chicken", "Handi", "Half"], "img": "img/chicken_handi.jpeg"},
+  {"id": 5, "cat": "CHICKEN", "name": "Chicken Handi (Full) | चिकन हंडी (फुल)", "price": "650/-", "desc": "Rich chicken curry slow-cooked in a handi - Full Portion", "tags": ["Non-Veg", "Chicken", "Handi", "Full"], "img": "img/chicken_handi.jpeg"},
+
+  {"id": 6, "cat": "MUTTON", "name": "Mutton Curry | मटण करी", "price": "150/-", "desc": "Traditional flavorful mutton gravy (Per Plate)", "tags": ["Non-Veg", "Mutton", "Curry"], "img": "img/mutton_curry.jpeg"},
+  {"id": 7, "cat": "MUTTON", "name": "Mutton Masala | मटण मसाला", "price": "160/-", "desc": "Thick spiced mutton curry (Per Plate)", "tags": ["Non-Veg", "Mutton", "Spicy"], "img": "img/mutton_masala.jpeg"},
+  {"id": 8, "cat": "MUTTON", "name": "Mutton Sukka | मटण सुक्खा", "price": "170/-", "desc": "Traditional dry mutton preparation with roasted spices (Per Plate)", "tags": ["Non-Veg", "Mutton", "Dry"], "img": "img/mutton_sukka.jpeg"},
+  {"id": 9, "cat": "MUTTON", "name": "Mutton Bahiram Handi (Half) | मटण बहिरम हंडी (हाफ)", "price": "550/-", "desc": "Special Bahiram style slow-cooked mutton handi - Half Portion", "tags": ["Non-Veg", "Mutton", "Handi", "Special", "Half"], "img": "img/mutton_bahiram_handi.jpeg"},
+  {"id": 10, "cat": "MUTTON", "name": "Mutton Bahiram Handi (Full) | मटण बहिरम हंडी (फुल)", "price": "1100/-", "desc": "Special Bahiram style slow-cooked mutton handi - Full Portion", "tags": ["Non-Veg", "Mutton", "Handi", "Special", "Full"], "img": "img/mutton_bahiram_handi.jpeg"},
+
+  {"id": 11, "cat": "VEG MENU", "name": "Dal Fry | दाल फ्राय", "price": "80/-", "desc": "Simple and comforting cooked yellow lentils", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal_fry.jpeg"},
+  {"id": 12, "cat": "VEG MENU", "name": "Dal Tadka | दाल तडका", "price": "100/-", "desc": "Yellow lentils tempered with garlic, cumin, and spices", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal_tadka.jpeg"},
+  {"id": 13, "cat": "VEG MENU", "name": "Dal Jeera | दाल जीरा", "price": "80/-", "desc": "Lentils tempered generously with cumin seeds", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal_jeera.jpeg"},
+  {"id": 14, "cat": "VEG MENU", "name": "Dal Pandharkawada | दाल पंढरकवडा", "price": "120/-", "desc": "Special Pandharkawada style spicy dal", "tags": ["Veg", "Main Course", "Dal", "Special"], "img": "img/dal_pandharkawada.jpeg"},
+  {"id": 15, "cat": "VEG MENU", "name": "Dum Aloo | दम आलू", "price": "140/-", "desc": "Slow-cooked baby potatoes in a rich spiced gravy", "tags": ["Veg", "Main Course"], "img": "img/dum_aloo.jpeg"},
+  {"id": 16, "cat": "VEG MENU", "name": "Gobi Masala | गोबी मसाला", "price": "120/-", "desc": "Cauliflower florets cooked in a thick spicy masala", "tags": ["Veg", "Main Course"], "img": "img/gobi_masala.jpeg"},
+  {"id": 17, "cat": "VEG MENU", "name": "Bhendi Masala | भेंडी मसाला", "price": "120/-", "desc": "Spiced okra curry", "tags": ["Veg", "Main Course"], "img": "img/bhendi_masala.jpeg"},
+  {"id": 18, "cat": "VEG MENU", "name": "Mix Veg | मिक्स व्हेज", "price": "120/-", "desc": "Assorted vegetables in a homestyle curry", "tags": ["Veg", "Main Course"], "img": "img/mix_veg.jpeg"},
+  {"id": 19, "cat": "VEG MENU", "name": "Shev Bhaji | शेव भाजी", "price": "100/-", "desc": "Spicy Maharashtrian curry topped with crispy shev", "tags": ["Veg", "Main Course", "Spicy"], "img": "img/shev_bhaji.jpeg"},
+  {"id": 20, "cat": "VEG MENU", "name": "Shev Tomato | शेव टमाटर", "price": "110/-", "desc": "Tangy tomato curry topped with crispy shev", "tags": ["Veg", "Main Course"], "img": "img/shev_tomato.jpeg"},
+  {"id": 21, "cat": "VEG MENU", "name": "Chana Masala | चणा मसाला", "price": "120/-", "desc": "Spicy and tangy chickpea curry", "tags": ["Veg", "Main Course"], "img": "img/chana_masala.jpeg"},
+  {"id": 22, "cat": "VEG MENU", "name": "Veg Kadai | व्हेज कढई", "price": "120/-", "desc": "Mixed vegetables cooked with bell peppers and crushed spices", "tags": ["Veg", "Main Course"], "img": "img/veg_kadai.jpeg"},
+  {"id": 23, "cat": "VEG MENU", "name": "Veg Maratha | व्हेज मराठा", "price": "130/-", "desc": "Spicy Maharashtrian style mixed vegetable dish", "tags": ["Veg", "Main Course", "Spicy"], "img": "img/veg_maratha.jpeg"},
+  {"id": 24, "cat": "VEG MENU", "name": "Veg Kolhapuri | व्हेज कोल्हापूरी", "price": "120/-", "desc": "Extra spicy mixed vegetable curry", "tags": ["Veg", "Main Course", "Spicy"], "img": "img/veg_kolhapuri.jpeg"},
+
+  {"id": 25, "cat": "PANEER DISHES", "name": "Paneer Masala | पनीर मसाला", "price": "120/-", "desc": "Classic spiced cottage cheese curry", "tags": ["Veg", "Main Course", "Paneer"], "img": "img/paneer_masala.jpeg"},
+  {"id": 26, "cat": "PANEER DISHES", "name": "Paneer Kolhapuri | पनीर कोल्हापूर", "price": "140/-", "desc": "Extra spicy paneer curry cooked with Kolhapuri masalas", "tags": ["Veg", "Main Course", "Paneer", "Spicy"], "img": "img/paneer_kolhapuri.jpeg"},
+  {"id": 27, "cat": "PANEER DISHES", "name": "Paneer Bhurji Curry | पनीर भुर्जी करी", "price": "120/-", "desc": "Scrambled paneer cooked in a flavorful gravy", "tags": ["Veg", "Main Course", "Paneer"], "img": "img/paneer_bhurji_curry.jpeg"},
+  {"id": 28, "cat": "PANEER DISHES", "name": "Paneer Bhurji Dry | पनीर भुर्जी ड्राय", "price": "130/-", "desc": "Dry preparation of scrambled paneer with onions and spices", "tags": ["Veg", "Main Course", "Paneer", "Dry"], "img": "img/paneer_bhurji_dry.jpeg"},
+  {"id": 29, "cat": "PANEER DISHES", "name": "Paneer Varhadi | पनीर वऱ्हाडी", "price": "120/-", "desc": "Special spicy Varhadi style paneer preparation", "tags": ["Veg", "Main Course", "Paneer", "Special"], "img": "img/paneer_varhadi.jpeg"},
+  {"id": 30, "cat": "PANEER DISHES", "name": "Paneer Kadai | पनीर कढई", "price": "140/-", "desc": "Paneer cooked with bell peppers and whole spices", "tags": ["Veg", "Main Course", "Paneer"], "img": "img/paneer_kadai.jpeg"},
+
+  {"id": 31, "cat": "SNACKS & SIDES", "name": "Sada Papad | साधा पापड", "price": "15/-", "desc": "Plain roasted crispy papad", "tags": ["Veg", "Snacks", "Sides"], "img": "img/sada_papad.jpeg"},
+  {"id": 32, "cat": "SNACKS & SIDES", "name": "Masala Papad | मसाला पापड", "price": "20/-", "desc": "Roasted papad topped with chopped onions, tomatoes, and spices", "tags": ["Veg", "Snacks", "Sides", "Spicy"], "img": "img/masala_papad.jpeg"},
+
+  {"id": 33, "cat": "BREADS", "name": "Tawa Roti | तवा रोटी", "price": "10/-", "desc": "Soft wheat flatbread roasted on a tawa", "tags": ["Veg", "Breads"], "img": "img/tawa_roti.jpeg"},
+  {"id": 34, "cat": "BREADS", "name": "Ghee Roti | घी रोटी", "price": "15/-", "desc": "Tawa roti brushed with pure desi ghee", "tags": ["Veg", "Breads", "Ghee"], "img": "img/ghee_roti.jpeg"},
+  {"id": 35, "cat": "BREADS", "name": "Roti Maratha | रोटी मराठा", "price": "20/-", "desc": "Special thick and soft Maratha style roti", "tags": ["Veg", "Breads", "Special"], "img": "img/roti_maratha.jpeg"},
+  {"id": 36, "cat": "BREADS", "name": "Jwari Bhakar | ज्वारी भाकर", "price": "20/-", "desc": "Healthy and traditional jowar flatbread", "tags": ["Veg", "Breads", "Healthy"], "img": "img/jwari_bhakar.jpeg"},
+  {"id": 37, "cat": "BREADS", "name": "Bajri Bhakar | बाजरी भाकर", "price": "20/-", "desc": "Healthy pearl millet flatbread", "tags": ["Veg", "Breads", "Healthy"], "img": "img/bajri_bhakar.jpeg"},
+
+  {"id": 38, "cat": "RICE", "name": "Sada Rice (Half) | साधा चावलं (हाफ)", "price": "30/-", "desc": "Plain steamed white rice - Half Portion", "tags": ["Veg", "Rice", "Half"], "img": "img/sada_rice.jpeg"},
+  {"id": 39, "cat": "RICE", "name": "Sada Rice (Full) | साधा चावलं (फुल)", "price": "60/-", "desc": "Plain steamed white rice - Full Portion", "tags": ["Veg", "Rice", "Full"], "img": "img/sada_rice.jpeg"},
+  {"id": 40, "cat": "RICE", "name": "Jeera Rice (Half) | जीरा चावलं (हाफ)", "price": "40/-", "desc": "Rice tempered with cumin seeds - Half Portion", "tags": ["Veg", "Rice", "Half"], "img": "img/jeera_rice.jpeg"},
+  {"id": 41, "cat": "RICE", "name": "Jeera Rice (Full) | जीरा चावलं (फुल)", "price": "80/-", "desc": "Rice tempered with cumin seeds - Full Portion", "tags": ["Veg", "Rice", "Full"], "img": "img/jeera_rice.jpeg"},
+
+  {"id": 42, "cat": "MAKING CHARGES", "name": "Mutton/Chicken/Fish Making | मटण, चिकन, मच्छी बनवायला", "price": "300/-", "desc": "Cooking charges for meat/seafood brought by customers (Per Kg)", "tags": ["Service", "Non-Veg", "Cooking Charges"], "img": "img/making_charges.jpeg"},
+
+  {"id": 43, "cat": "FISH FRY ITEMS", "name": "Fish Fry | फिश फ्राय", "price": "100/-", "desc": "Pan-fried fresh fish (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Fried"], "img": "img/fish_fry.jpeg"},
+  {"id": 44, "cat": "FISH FRY ITEMS", "name": "Fish Crispy Fry | फिश क्रिपसी फ्राय", "price": "120/-", "desc": "Extra crispy pan-fried fish (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Crispy"], "img": "img/fish_crispy_fry.jpeg"},
+  {"id": 45, "cat": "FISH FRY ITEMS", "name": "Fish Fry (Full Piece) | फिश फ्राय फुल पीस", "price": "120/-", "desc": "Whole fish pan-fried to perfection (Per Piece)", "tags": ["Non-Veg", "Seafood", "Fish", "Fried"], "img": "img/fish_fry_full.jpeg"},
+  {"id": 46, "cat": "FISH FRY ITEMS", "name": "Full Piece Crispy Fry | फुल पीस क्रिपसी फ्राय", "price": "140/-", "desc": "Whole fish extra crispy fried (Per Piece)", "tags": ["Non-Veg", "Seafood", "Fish", "Crispy"], "img": "img/fish_crispy_full.jpeg"},
+  {"id": 47, "cat": "FISH FRY ITEMS", "name": "Pomfret Fry | पॉपलेट फ्राय", "price": "Ask/-", "desc": "Premium pan-fried Pomfret fish", "tags": ["Non-Veg", "Seafood", "Fish", "Fried"], "img": "img/pomfret_fry.jpeg"},
+  {"id": 48, "cat": "FISH FRY ITEMS", "name": "Bangda Fry | बांगडा फ्राय", "price": "150/-", "desc": "Crispy pan-fried Mackerel fish (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Fried"], "img": "img/bangda_fry.jpeg"},
+  {"id": 49, "cat": "FISH FRY ITEMS", "name": "Kolambi Fry | कोळंबी फ्राय", "price": "150/-", "desc": "Spicy and crispy pan-fried prawns (Per Plate)", "tags": ["Non-Veg", "Seafood", "Prawns", "Fried"], "img": "img/kolambi_fry.jpeg"},
+  {"id": 50, "cat": "FISH FRY ITEMS", "name": "Anda Masala Fry | अंडा मसाला फ्राय", "price": "100/-", "desc": "Spicy pan-fried boiled eggs (Per Plate)", "tags": ["Non-Veg", "Egg", "Spicy"], "img": "img/anda_masala_fry.jpeg"},
+  {"id": 51, "cat": "FISH FRY ITEMS", "name": "Finger Fish | फिंगर फिश", "price": "120/-", "desc": "Boneless fish strips fried with spices (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Snacks"], "img": "img/finger_fish.jpeg"},
+  {"id": 52, "cat": "FISH FRY ITEMS", "name": "Finger Fish Crispy | फिंगर फिश क्रिपसी", "price": "140/-", "desc": "Extra crispy boneless fish strips (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Crispy"], "img": "img/finger_fish_crispy.jpeg"},
+  {"id": 53, "cat": "FISH FRY ITEMS", "name": "Chala Fry | चाला फ्राय", "price": "100/-", "desc": "Crispy fried Chala fish (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Fried"], "img": "img/chala_fry.jpeg"},
+
+  {"id": 54, "cat": "FISH SABJI ITEMS", "name": "Fish Curry | फिश करी", "price": "150/-", "desc": "Traditional spicy fish gravy (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Curry"], "img": "img/fish_curry.jpeg"},
+  {"id": 55, "cat": "FISH SABJI ITEMS", "name": "Fish Lapeta | फिश लपेटा", "price": "170/-", "desc": "Fish coated in a thick, rich, and spicy masala (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Spicy"], "img": "img/fish_lapeta.jpeg"},
+  {"id": 56, "cat": "FISH SABJI ITEMS", "name": "Fish Kusala | फिश कुसला", "price": "130/-", "desc": "Special local style fish preparation (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Special"], "img": "img/fish_kusala.jpeg"},
+  {"id": 57, "cat": "FISH SABJI ITEMS", "name": "Jhinga Besan | झिंगा बेसन", "price": "100/-", "desc": "Prawns cooked in a spiced gram flour base (Per Plate)", "tags": ["Non-Veg", "Seafood", "Prawns"], "img": "img/jhinga_besan.jpeg"},
+  {"id": 58, "cat": "FISH SABJI ITEMS", "name": "Mokhad Jhinga Besan | मोखाड झिंगा बेसन", "price": "120/-", "desc": "Special Mokhad style prawns cooked in gram flour (Per Plate)", "tags": ["Non-Veg", "Seafood", "Prawns", "Special"], "img": "img/mokhad_jhinga.jpeg"},
+  {"id": 59, "cat": "FISH SABJI ITEMS", "name": "Khekda Bhaji | खेकडा भाजी", "price": "300/-", "desc": "Spicy and thick crab masala (Per Plate)", "tags": ["Non-Veg", "Seafood", "Crab", "Spicy"], "img": "img/khekda_bhaji.jpeg"},
+  {"id": 60, "cat": "FISH SABJI ITEMS", "name": "Khekda Kadhi | खेकडा कढी", "price": "350/-", "desc": "Tangy and flavorful crab curry (Per Plate)", "tags": ["Non-Veg", "Seafood", "Crab", "Curry"], "img": "img/khekda_kadhi.jpeg"},
+  {"id": 61, "cat": "FISH SABJI ITEMS", "name": "Chala Curry | चाला करी", "price": "120/-", "desc": "Spicy Chala fish gravy (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Curry"], "img": "img/chala_curry.jpeg"},
+  {"id": 62, "cat": "FISH SABJI ITEMS", "name": "Bombil Curry | बोंबील करी", "price": "120/-", "desc": "Traditional Bombay Duck fish curry (Per Plate)", "tags": ["Non-Veg", "Seafood", "Fish", "Curry"], "img": "img/bombil_curry.jpeg"},
+  {"id": 63, "cat": "FISH SABJI ITEMS", "name": "Sukat Chutney | सुकट चटणी", "price": "80/-", "desc": "Spicy dry baby shrimp preparation (Per Plate)", "tags": ["Non-Veg", "Seafood", "Prawns", "Dry"], "img": "img/sukat_chutney.jpeg"},
+  {"id": 64, "cat": "FISH SABJI ITEMS", "name": "Jhinga Chutney | झिंगा चटणी", "price": "80/-", "desc": "Spicy dry prawns chutney (Per Plate)", "tags": ["Non-Veg", "Seafood", "Prawns", "Dry"], "img": "img/jhinga_chutney.jpeg"},
+  {"id": 65, "cat": "FISH SABJI ITEMS", "name": "Jhinga Curry | झिंगा करी", "price": "100/-", "desc": "Spicy and flavorful prawn gravy (Per Plate)", "tags": ["Non-Veg", "Seafood", "Prawns", "Curry"], "img": "img/jhinga_curry.jpeg"},
 
 
-
+              
 
           
 
